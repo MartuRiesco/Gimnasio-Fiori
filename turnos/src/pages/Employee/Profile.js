@@ -21,7 +21,7 @@ function Profile() {
         ...cls,
         timings: cls.timings.map(time => dayjs(time).format('HH'))
       }));
-      const response = await axios.post('gimnasio-fiori-production.up.railway.app/api/employee/update-employee-profile', 
+      const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/employee/update-employee-profile', 
         {
           ...values,
           userId: user._id,
@@ -50,7 +50,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        'gimnasio-fiori-production.up.railway.app/api/employee/get-employee-info-by-userid',
+        'https://gimnasio-fiori-production.up.railway.app/api/employee/get-employee-info-by-userid',
         { userId: params.employeeId },
         {
           headers: {

@@ -21,7 +21,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        'gimnasio-fiori-production.up.railway.app/api/employee/get-employee-info-by-id', 
+        'https://gimnasio-fiori-production.up.railway.app/api/employee/get-employee-info-by-id', 
         { employeeId: params.employeeId },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
@@ -39,7 +39,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        'gimnasio-fiori-production.up.railway.app/api/user/book-appointment', 
+        'https://gimnasio-fiori-production.up.railway.app/api/user/book-appointment', 
         {
           employeeId: params.employeeId,
           userId: user._id,

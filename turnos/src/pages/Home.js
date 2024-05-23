@@ -10,7 +10,7 @@ function Home() {
     const getData = async () => {
         try {
             dispath(showLoading())
-            const response = await axios.get('gimnasio-fiori-production.up.railway.app/api/user/get-all-employees', {
+            const response = await axios.get('https://gimnasio-fiori-production.up.railway.app/api/user/get-all-employees', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

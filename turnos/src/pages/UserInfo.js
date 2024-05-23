@@ -14,7 +14,7 @@ function UserInfo() {
  const getData = async () => {
   try {
       dispath(showLoading())
-      const response = await axios.get('gimnasio-fiori-production.up.railway.app/api/user/get-user-info-by-id', {
+      const response = await axios.get('https://gimnasio-fiori-production.up.railway.app/api/user/get-user-info-by-id', {
           headers: {
               Authorization: 'Bearer ' + localStorage.getItem('token')
           }
@@ -35,7 +35,7 @@ const onFinish = async (values) =>{
   dispath(showLoading());
 console.log(values, 'val');
   try {
-   const response = await axios.put('gimnasio-fiori-production.up.railway.app/api/user/update-user', {
+   const response = await axios.put('https://gimnasio-fiori-production.up.railway.app/api/user/update-user', {
           id: user._id,
           valueToUpdate: values
       }, {

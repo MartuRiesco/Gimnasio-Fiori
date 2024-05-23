@@ -18,7 +18,7 @@ function ApplyEmployee() {
             dispatch(showLoading());
             const classes = values.classes
             console.log(classes);
-            const response = await axios.post('gimnasio-fiori-production.up.railway.app/api/user/apply-employee-account', 
+            const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/user/apply-employee-account', 
                 {
                     ...values,
                     userId: user._id,
