@@ -1,0 +1,491 @@
+.body-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title {
+    margin: 20px !important;
+    font-weight: bold;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90% !important;
+    padding: 20px !important;
+    background-color: var( --clr-gray-light) !important;
+    color: var(--clr-secundario) !important;
+    margin: 0 20px !important;
+    border-radius: 20px !important;
+}
+
+.title-container-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90% !important;
+    padding: 20px !important;
+    background-color: var(--clr-secundario) !important;
+    color: var(--clr-secundario-dark) !important;
+    margin: 0 20px !important;
+    border-radius: 20px !important;
+}
+.clases{
+    font-size: large;
+}
+.title-notificacion-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-container-profile i {
+    font-size: 30px !important;
+    margin-right: 10px !important;
+}
+
+.title { 
+    font-size: 20px !important;
+    color: var(--clr-secundario);
+    font-weight: bold;
+}
+
+.title-container i {
+    font-size: 30px !important;
+    margin-right: 10px !important;
+}
+
+.title-notifications {
+    padding: 20px 10px !important;
+    width: 80% !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ant-tabs-nav-list {
+    padding: 20px !important;
+    color: var(--clr-secundario-dark) !important;
+}
+
+.container-notifications{
+    display: flex;
+    background-color: transparent  !important;
+    flex-direction: column;
+}
+
+.ant-tabs-tab {
+    background-color: var(--clr-secundario) !important;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    margin: 0 20px 0 0 !important;
+}
+
+.ant-tabs-tab-btn {
+    color: var(--clr-secundario-dark) !important;
+}
+
+.ant-tabs-ink-bar {
+    background: var(--clr-secundario) !important;
+}
+
+.ant-badge-count {
+    color: var(--clr-gray-light) !important;
+    background: var(--clr-red) !important;
+    right: 60px !important;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+.ant-tabs-content-holder {
+    background-color: transparent !important;
+}
+.menu-notifications {
+    display: flex ;
+    justify-content: space-between;
+    margin: 30px !important;
+}
+.green-dot-container {  
+    background-color: gray !important;
+    height: 800px;
+    display: block;
+    width: 800px;
+    top: 40%;
+    right: 30%;
+    position: fixed;
+    border-radius: 600px;
+    z-index: -9999;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card {
+    color: var(--clr-secundario);
+    margin: 20px !important;
+    background-color: var( --clr-gray-light) !important;
+}
+
+.form-update {
+    margin: 20px !important;
+}
+
+.user-info {
+    padding:10px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.info-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-info-tag {
+    font-size: 14px !important;
+}
+
+
+/* service */
+
+.service {
+    width: 100% !important;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card {
+    background-color: var(--clr-secundario) !important;
+    margin: 1rem 0 !important;
+    width: 340px !important;
+    height: fit-content !important;
+    padding: 2rem !important;
+    border-radius: 20px !important;
+}
+
+.service-title h1 {
+    font-size: 45px !important;
+    text-align: left;
+}
+
+.service-card h2 {
+    position: relative;
+    top: 10px !important;
+    width: 200px !important;
+    font-size: 25px !important;
+    font-weight: bold;
+    color: var(--clr-secundario-dark) !important;
+}
+
+.service-card p {
+    position: relative;
+    color:  var(--clr-secundario-dark) !important;
+    top: 10px !important;
+    font-size: .9rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.service-card i.arrow {
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    padding: .5rem !important;
+    border-radius: 10px !important;
+    font-size: 1.5rem;
+    position: relative;
+    left: 250px !important;
+    top: -30px !important;
+}
+
+.service-card i {
+    color: var(--clr-secundario-dark) !important;
+    font-size: 5.5rem;
+}
+
+.service-card h3 {
+    font-size: 2rem !important;
+    position: relative;
+    top: 10px !important;
+    font-weight: bold;
+    color: var(--clr-secundario-dark) !important;
+}
+
+/* USER */
+
+.user-card {
+    background-color: var(--clr-secundario) !important;
+    margin: 1rem 0 !important;
+    width: 350px !important;
+    height: fit-content !important;
+    padding: 2rem !important;
+    border-radius: 20px !important;
+    color: white;
+}
+
+.user-card h2 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.user-card p {
+    font-size: 14px !important;
+}
+
+.user-block {
+    margin-right: 1rem !important;
+    margin-top: .5rem !important;
+    font-size: 12px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    width: 130px !important;
+    padding: 10px !important;
+}
+
+/* APPOINMENTS LIST */
+
+.employee-card {
+    background-color: var(--clr-secundario) !important;
+    margin: 1rem 0 !important;
+    width: 350px !important;
+    height: 280px !important;
+    padding: 2rem !important;
+    border-radius: 30px !important;
+    color: white;
+}
+
+.employee-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 8px !important;
+}
+
+.employee-card h2 {
+    font-size: 30px !important;
+}
+
+.block-approve-employee{
+    display: flex;
+    flex-direction: row;
+}
+
+.employee-card p {
+    font-size: 14px !important;
+}
+
+.employee-card a {
+    font-size: 14px !important;
+}
+
+.employee-whatsapp i {
+    font-size: 20px !important;
+    margin-right: 10px !important;
+    width: fit-content !important;
+}
+
+.employee-approved {
+    margin-right: 1rem !important;
+    margin-top: .5rem !important;
+    font-size: 12px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    width: 85px !important;
+    padding: 10px !important;
+}
+
+.employee-rejected {
+    margin-right: 1rem !important;
+    margin-top: .5rem !important;
+    font-size: 12px !important;
+    background-color: var(--clr-red) !important;
+    color: var(--clr-red-light) !important;
+    border-radius: 10px !important;
+    max-width: 108px !important;
+    padding: 10px !important;
+}
+
+.employee-status {
+    margin: 1rem 0 !important;
+    text-align: center;
+    font-size: 12px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    max-width: 100px !important;
+    text-transform: capitalize;
+    padding: 10px !important;
+}
+
+.employee-reserved {
+    margin: 1rem 0 !important;
+    text-align: center;
+    font-size: 12px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    max-width: 200px !important;
+    text-transform: capitalize;
+    padding: 10px !important;
+}
+
+.employee-whatsapp {
+    margin: 1rem 0 !important;
+    text-align: center;
+    font-size: 12px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    max-width: 120px !important;
+    padding: 10px !important;
+}
+
+/* CALENDARIO ESTILOS */
+
+.calendar {
+    width: 80%;
+    margin: 1rem 2.5rem !important;
+    background-color: var(--clr-white) !important;
+}
+
+
+.title-appiointment-notifications {
+    width: 70% !important;
+    margin: 40px 0 !important;
+    font-size: 30px !important;
+    font-weight: 40px !important;
+    color: black;
+}
+.booked-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.booked-notification{
+    margin: 10px !important;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.info-appiointment-notifications{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px 0 !important;
+}
+
+.booked{
+    top: 10% !important;
+}
+
+.buttons-appointment{
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 5dvb !important;
+    flex-direction: column;
+    align-items: left;
+}
+
+.button-booked {
+    margin-right: 1rem !important;
+    margin-top: .5rem !important;
+    font-size: 16px !important;
+    background-color: var(--clr-secundario-dark) !important;
+    color: var(--clr-secundario) !important;
+    border-radius: 10px !important;
+    width: 150px !important;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.button-calendar {
+    margin-right: 1rem !important;
+    margin-top: 1rem !important;
+    font-size: 16px !important;
+    background-color: var(--clr-secundario) !important;
+    color: var(--clr-secundario-dark) !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    padding: 20px !important;
+    text-align: center;
+}
+
+.secondary-button {
+    margin-right: 1rem !important;
+    margin-top: 1rem !important;
+    font-size: 16px !important;
+    background-color: var(--clr-secundario) !important;
+    color: var(--clr-secundario-dark) !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    padding: 20px !important;
+    text-align: center;
+}
+
+.ant-picker-panel-layout {
+    align-items: center !important;
+}
+
+.ant-picker-time-panel-column {
+    width: 300px !important;
+    text-align: center !important;
+}
+
+.ant-picker-time-panel-cell {
+    margin-bottom: 18px !important;
+    font-weight: bold !important;
+    color: var(--clr-primario) !important;
+    text-align: center !important;
+}
+
+.ant-picker-time-panel-cell-inner {
+    font-size: 24px !important;
+    width: 300px !important;
+}
+
+.ant-picker-time-panel-cell-selected {
+    text-align: center !important;
+}
+
+.ant-picker-ranges {
+    font-size: 18px !important;
+    display: flex;
+    justify-content: space-between !important;
+    padding: 20px !important;
+}
+
+.ant-btn {
+    font-size: 18px !important;
+    color: var(--clr-secundario-dark) !important;
+    background-color: var(--clr-secundario) !important;
+}
+
+.filter-container{
+    margin: 25px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-filter{
+    margin: 5px !important;
+}
+
+.filter-label{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

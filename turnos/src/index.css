@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,500;1,700&family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
+  font-family: var(--ff-primario) !important;
+}
+
+:root {
+  --clr-primario: rgb(0, 0, 0);
+  --clr-primario-dark: rgb(0, 0, 0);
+  --clr-secundario: rgb(0, 0, 0);
+  --clr-secundario-dark: rgb(255, 255, 255);
+  --clr-gray: rgb(213, 252, 189);
+  --clr-gray-light: rgb(233, 231, 231);
+  --clr-white: rgba(255, 255, 255, 0.8);
+  --clr-red: rgb(235, 95, 66);
+  --clr-red-light: rgb(135, 39, 20);
+  --ff-primario: 'Poppins', sans-serif;
+  --ff-secundario: 'Playfair Display', serif;
+}
+
+.ant-btn-primary {
+  background-color: var(--clr-secundario);
+  color: var(--clr-primario-dark);
+}
+
+
+/********************************** REGISTER / LOGIN */
+
+/* Antd Vertical */
+
+input {
+  border-radius: 20px !important;
+  border: 0 !important;
+  height: 60px !important;
+  background: var(--clr-gray-light) !important;
+  padding: 20px !important;
+  margin: 5px 0 !important;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--clr-gray-light) !important;
+}
+
+label {
+  font-size: 16px !important;
+  color: var(--clr-primario) !important;
+}
+
+.ant-form-item {
+  margin: 10px 0 !important;
+}
+
+.spinner-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-secundario);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+  color: var(--clr-primario-dark);
+}
+
+/* Commom Styling */
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.normal-text {
+  font-size: 1rem;
+}
+
+.card {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.primary-button {
+  border-radius: 20px !important;
+  background-color: var(--clr-secundario) !important;
+  border-color: var(--clr-secundario) !important;
+  height: 60px !important;
+  width: 100% !important;
+  color: var(--clr-secundario-dark);
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: .2px !important;
+}
+
+.secondary-button{
+  border-radius: 20px !important;
+  background-color: var(--clr-secundario) !important;
+  border-color: var(--clr-secundario) !important;
+  height: 60px !important;
+  width: 100% !important;
+  color: var(--clr-secundario-dark);
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: .2px !important;
+}
+
+.anchor {
+  color: var(--clr-primario) !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+.anchor i {
+  font-size: 14px !important;
+  margin: 0 10px !important;
+}
+
+.anchor:hover {
+  color: var(--clr-primario-dark) !important;
+}
+
+/* authentication pages */
+
+.authentication {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+}
+
+.authentication-form {
+  width: 400px;
+}

@@ -1,0 +1,158 @@
+.main {
+    height: 100vh;
+}
+.logo{
+    height:130px;
+    width: 130px;
+}
+.header {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-action-icon {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--clr-primario-dark);
+    cursor: pointer;
+    margin: 1.5rem !important;
+}
+
+.welcome {
+    background-color: var(--clr-white);
+    margin: 0 1.5rem 1.5rem !important;
+
+}
+
+.welcome h1 {
+    font-size: 60px;
+    letter-spacing: -2px !important;
+    font-weight: bold;
+    color: var(--clr-primario-dark);
+}
+
+.welcome p {
+    font-size: 16px;
+    letter-spacing: 0px !important;
+    color: var(--clr-primario-dark);
+    text-transform: none;
+}
+
+.welcome-name {
+    text-transform: capitalize;
+    font-weight: bold !important;
+}
+
+.menu-item {
+    margin-top: 40px !important;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+    padding: 1rem !important;
+}
+
+.role {
+    background-color: var(--clr-secundario) !important;
+    font-weight: bold !important;
+    color: var(--clr-secundario-dark) !important;
+    margin: 15px 0 0 !important;
+    text-align: center !important;
+    border-radius: 15px;
+    max-width: 120px !important;
+    min-width: 100px !important;
+    padding: 5px !important;
+    font-size: 16px !important;
+}
+
+.menu-bg {
+    background-color: var(--clr-secundario);
+    border-radius: 20px !important;
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.menu-item p {
+    color: var(--clr-secundario-dark);
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-weight: bold;
+    text-align: right;
+    width: 60%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.menu-item i {
+    color: var(--clr-secundario-dark);
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.active-menu-item a {
+    color: var(--clr-active);
+}
+
+.active-menu-item i {
+    color: var(--clr-primario-dark);
+}
+
+.content {
+    min-height: 100%;
+}
+
+.body {
+    margin: 1rem !important;
+    border-radius: 30px;
+}
+
+/* employee card */
+
+.card {
+    background-color: var(--clr-secundario);
+    padding: 20px !important;
+    border-radius: 20px !important;
+}
+
+/* antd rules*/
+
+.ant-picker-input input {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.ant-picker {
+    height: 60px !important;
+}
+
+.whatsapp-icono {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+}
+
+.whatsapp-icono a {
+    color: white;
+    background-color: #1dd639;
+    text-decoration: none;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 10px 10px 10px !important;
+    transition: all 0.3s; 
+}
+
+.whatsapp-icono a:hover {
+    background-color: #159828; 
+}
