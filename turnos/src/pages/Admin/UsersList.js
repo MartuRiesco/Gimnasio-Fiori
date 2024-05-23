@@ -12,7 +12,7 @@ function UsersList() {
   const deleteUser = async (userId)=>{
     try {
       dispatch(showLoading());
-      const response = await axios.delete('/api/admin/delete-user', 
+      const response = await axios.delete('gimnasio-fiori-production.up.railway.app/api/admin/delete-user', 
       { data: {
         userId: userId
       }},{
@@ -31,7 +31,7 @@ function UsersList() {
   const getUsersData = async () => {
     try {
         dispatch(showLoading());
-        const response = await axios.get('/api/admin/get-all-users', {
+        const response = await axios.get('gimnasio-fiori-production.up.railway.app/api/admin/get-all-users', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }

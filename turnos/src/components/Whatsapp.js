@@ -6,7 +6,7 @@ import { BsWhatsapp } from "react-icons/bs";
 function WhatsApp() {
   return (
     <div className="whatsapp-icono">
-        <a href="https://wa.me/5491123461843"><BsWhatsapp /></a>
+        <a href="https://wa.me/5491141907329"><BsWhatsapp /></a>
     </div>
   )
 }

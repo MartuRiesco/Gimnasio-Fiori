@@ -12,7 +12,7 @@ function EmployeeList() {
   const getEmployeeData = async () => {
     try {
         dispatch(showLoading());
-        const response = await axios.get('/api/admin/get-all-employees', {
+        const response = await axios.get('gimnasio-fiori-production.up.railway.app/api/admin/get-all-employees', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }

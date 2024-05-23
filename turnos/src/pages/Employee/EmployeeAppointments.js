@@ -14,7 +14,7 @@ function EmployeeAppointments() {
   const getAppointmentsData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get('/api/employee/get-appointments-by-employee-id', {
+      const response = await axios.get('gimnasio-fiori-production.up.railway.app/api/employee/get-appointments-by-employee-id', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
@@ -33,7 +33,7 @@ function EmployeeAppointments() {
     try {
       console.log(userInfo);
       dispatch(showLoading());
-      const response = await axios.delete('/api/employee/delete-appointment',
+      const response = await axios.delete('gimnasio-fiori-production.up.railway.app/api/employee/delete-appointment',
         {
           data: {
             appointmentId: appointmentId,
@@ -57,7 +57,7 @@ function EmployeeAppointments() {
   const changeAppointmentsStatus = async (record, status) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post('/api/employee/change-apppointment-status', { appointmentId: record._id, status: status }, {
+      const response = await axios.post('gimnasio-fiori-production.up.railway.app/api/employee/change-apppointment-status', { appointmentId: record._id, status: status }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

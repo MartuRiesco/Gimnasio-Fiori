@@ -16,13 +16,13 @@ function Appointments() {
       dispatch(showLoading());
       let response;
       if (user && user.isAdmin) {
-        response = await axios.get('/api/admin/get-all-appointments', {
+        response = await axios.get('gimnasio-fiori-production.up.railway.app/api/admin/get-all-appointments', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
         });
       } else if (user) {
-        response = await axios.get('/api/user/get-appointments-by-user-id', {
+        response = await axios.get('gimnasio-fiori-production.up.railway.app/api/user/get-appointments-by-user-id', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

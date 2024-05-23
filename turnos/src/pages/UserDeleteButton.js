@@ -5,7 +5,7 @@ import axios from 'axios';
 const UserDeleteButton = ({ userId }) => {
   const deleteUser = async () => {
     try {
-      const response = await axios.delete(`https://central-de-turnos-production-f438.up.railway.app/api/admin/${userId}`); // Envía una solicitud DELETE al backend
+      const response = await axios.delete(`gimnasio-fiori-production.up.railway.app/api/admin/${userId}`); // Envía una solicitud DELETE al backend
       alert(response.data.message); // Muestra el mensaje de éxito o error
     } catch (error) {
       console.error('Error al eliminar el usuario:', error);

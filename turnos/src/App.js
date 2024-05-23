@@ -19,7 +19,7 @@ import UserInfo from './pages/UserInfo';
 import Appoinments from './pages/Appoinments';
 import EmployeeAppoinments from './pages/Employee/EmployeeAppointments';
 import AppointmentBooked from './pages/AppointmentBooked';
-//import WhatsApp from './components/Whatsapp';
+import WhatsApp from './components/Whatsapp';
 
 
 function App() {
@@ -139,7 +139,7 @@ function App() {
                   </ProtectedRoute>
                 }/>
           </Routes>
-          {/* <WhatsApp/> */}
+          <WhatsApp/> 
           </div>
       </BrowserRouter>
     </div>
