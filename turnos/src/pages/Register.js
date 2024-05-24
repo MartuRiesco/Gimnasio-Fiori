@@ -10,53 +10,56 @@ import Logo from '../components/Logo';
 function Register() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
     const onFinish = async (values) => {
         try {
-          dispatch(showLoading());
-          const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/user/register', values);
-          dispatch(hideLoading())
-          if(response.data.success) {
-            toast.success(response.data.message);
-            navigate('/login');
-          } else {
-            toast.success(response.data.message)
-          }
+            dispatch(showLoading());
+            const formattedValues = {
+                ...values,
+                email: values.email.toLowerCase()
+            };
+            const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/user/register', formattedValues);
+            dispatch(hideLoading());
+            if (response.data.success) {
+                toast.success(response.data.message);
+                navigate('/login');
+            } else {
+                toast.error(response.data.message);
+            }
         } catch (error) {
             dispatch(hideLoading());
-            toast.error('Something went wrong');  
+            toast.error('Something went wrong');
         }
-    }
+    };
 
-  return (
-    <div className="authentication">
+    return (
+        <div className="authentication">
             <div className="authentication-form p-3">
                 <div>
                     <Logo />
                 </div>
                 <Form layout='vertical m-3' onFinish={onFinish}>
-                        <Form.Item name='name'>
-                                <Input placeholder='Nombre' />
-                        </Form.Item>
-                        <Form.Item name='email'>
-                                <Input placeholder='Email' />
-                        </Form.Item>
-                        <Form.Item name='phone'>
-                                <Input placeholder='Celular, sin 0 y sin 15' />
-                        </Form.Item>
-                        <Form.Item name='password'>
-                                <Input placeholder='Password' type="password" />
-                        </Form.Item>
-
-                        <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrarse</Button>
-
-                        <Link to="/login" className="anchor mt-4">
-                            <i class="ri-arrow-left-line"></i>
-                            Volver al login
-                        </Link>
+                    <Form.Item name='name'>
+                        <Input placeholder='Nombre' />
+                    </Form.Item>
+                    <Form.Item name='email'>
+                        <Input placeholder='Email' />
+                    </Form.Item>
+                    <Form.Item name='phone'>
+                        <Input placeholder='Celular, sin 0 y sin 15' />
+                    </Form.Item>
+                    <Form.Item name='password'>
+                        <Input placeholder='Password' type="password" />
+                    </Form.Item>
+                    <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrarse</Button>
+                    <Link to="/login" className="anchor mt-4">
+                        <i className="ri-arrow-left-line"></i>
+                        Volver al login
+                    </Link>
                 </Form>
             </div>
         </div>
-  )
+    );
 }
 
 export default Register;

@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🏋️‍♂️ Gimnasio Fiori - Central de Turnos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenidos a Gimnasio Fiori! Esta es una aplicación desarrollada con el stack MERN (MongoDB, Express, React, Node.js) para gestionar los turnos de un gimnasio. La aplicación cuenta con diferentes roles de usuario: clientes, administradores y empleados, cada uno con su propio conjunto de funcionalidades.
 
-## Available Scripts
+## 🚀 Despliegue Provisorio
 
-In the project directory, you can run:
+Puedes visitar la versión en línea de nuestra aplicación [aquí](https://gimnasio-fiori.vercel.app/) 🌐.
 
-### `npm start`
+## 🌟 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 👥 Clientes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Perfil**: Vista y edición del perfil del cliente.
+- **Clases Disponibles**: Visualización de todas las clases disponibles en el gimnasio.
+- **Clases Anotadas**: Listado de las clases en las que el cliente se ha inscrito.
 
-### `npm test`
+### 🧑‍🏫 Empleados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Alumnos en Clases**: Vista de los alumnos inscritos en las clases que dicta el empleado.
+- **Clases que Dicta**: Listado de las clases que el empleado está dictando.
 
-### `npm run build`
+### 👨‍💼 Administradores
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Usuarios**: Gestión de todos los usuarios del sistema.
+- **Clases**: Gestión de todas las clases del gimnasio.
+- **Alumnos en Clases**: Vista detallada de los alumnos inscritos en cada clase.
+- **Listado de Empleados**: Gestión de todos los empleados del gimnasio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔔 Notificaciones
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El sistema incluye notificaciones que se envían en los siguientes eventos:
 
-### `npm run eject`
+- ✅ Confirmación de inscripción a una clase.
+- 👩‍💼 Confirmación de un empleado.
+- ❌ Eliminación de una clase.
+- 🗑️ Eliminación de un usuario.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠 Tecnologías Utilizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para la construcción de esta aplicación hemos utilizado las siguientes tecnologías:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **MongoDB**: Base de datos NoSQL 🗄️.
+- **Express**: Framework de Node.js para construir el backend ⚙️.
+- **React**: Biblioteca de JavaScript para construir la interfaz de usuario 🖥️.
+- **Node.js**: Entorno de ejecución para JavaScript en el servidor 🌐.
+- **Vercel**: Para el despliegue y hosting de la aplicación 🚀.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📬 Contacto
 
-## Learn More
+Si tienes alguna pregunta o deseas saber más sobre nuestros servicios, no dudes en contactarnos a través de nuestro formulario en la sección de contacto de la página web 📧.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contribuciones
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+¡Estamos abiertos a contribuciones! Si deseas colaborar con nuestro proyecto, por favor sigue estos pasos:
 
-### Code Splitting
+1. Haz un fork del repositorio 🍴.
+2. Crea una rama nueva (`git checkout -b feature/nueva-funcionalidad`) 🌿.
+3. Realiza los cambios necesarios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`) ✍️.
+4. Sube los cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`) 🚀.
+5. Abre un Pull Request en nuestro repositorio 🔄.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Licencia
 
-### Analyzing the Bundle Size
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles 📄.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📂 Estructura del Repositorio
 
-### Making a Progressive Web App
+```plaintext
+/
+├── backend/
+│   ├── controllers/    # Controladores de la aplicación
+│   ├── models/         # Modelos de datos (Mongoose)
+│   ├── routes/         # Definición de las rutas API
+│   ├── server.js       # Configuración del servidor
+├── frontend/
+│   ├── src/
+│   │   ├── components/ # Componentes React
+│   │   ├── pages/      # Páginas principales
+│   │   ├── App.js      # Componente principal
+│   │   ├── index.js    # Punto de entrada
+│   ├── public/
+│   │   ├── index.html  # Plantilla HTML
+│   │   ├── ...         # Otros archivos públicos
+├── .env                # Variables de entorno
+├── package.json        # Dependencias y scripts
+└── README.md           # Este archivo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por visitar Gimnasio Fiori! 🏋️‍♀️✨

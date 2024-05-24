@@ -83,7 +83,7 @@ function BookAppointment() {
             <div className='d-flex flex-column mt-2'>
               <Select 
                 placeholder="Seleccione una clase"
-                className='mt-3 p-3'
+                className='mt-3 p-3 clase'
                 onChange={(value) => setSelectedClass(value)}
               >
                 {employee.classes.map((cls) => (
