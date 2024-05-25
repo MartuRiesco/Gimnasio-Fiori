@@ -53,7 +53,7 @@ function UsersList() {
   return (
     <div className='service'>
         <div className='title-container'>
-          <h1 className='title-notifications'>Lista de usuarios</h1>
+          <h1 className='title-notifications'>Lista de clientes</h1>
           <i class="ri-user-follow-line"></i>
         </div>
         <div className='service-container'>

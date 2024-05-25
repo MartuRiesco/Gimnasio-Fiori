@@ -383,7 +383,7 @@ button > .button-class {
     background-color: var(--clr-secundario-dark) !important;
     color: var(--clr-secundario) !important;
     border-radius: 10px !important;
-    max-width: 120px !important;
+    max-width: 150px !important;
     padding: 10px !important;
 }
 
@@ -513,20 +513,21 @@ button > .button-class {
 }
 
 .filter-container{
-    margin: 25px !important;
+    margin: 25px 0 !important;
+    padding: 0 30px !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.input-filter{
-    margin: 5px !important;
+.input-filter {
+    margin: 5px 20px !important;
 }
 
-.filter-label{
+.filter-label {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: left;
 }
 .clase{
     height: 70px;

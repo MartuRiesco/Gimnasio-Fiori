@@ -92,7 +92,7 @@ function BookAppointment() {
                      className="select-clase-input"
                      key={cls._id} 
                      value={cls._id}>
-                    {cls.name} - {cls.day} ({cls.timings.join(', ')})
+                    {cls.name} - {cls.day} ({cls.timings.join(' a ')})
                   </Option>
                 ))}
               </Select>
