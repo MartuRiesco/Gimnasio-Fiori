@@ -121,6 +121,7 @@ function EmployeeForm({ onFinish, initialValues = {} }) {
             <Row>
               <Col span={8} xs={24} sm={24} lg={8}>
                 <Button
+                  className='button-class'
                   type="dashed"
                   onClick={() => add()}
                 >
