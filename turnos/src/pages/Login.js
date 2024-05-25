@@ -11,18 +11,21 @@ function Login() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const onFinish = async(values) => {
-        try {
-            dispatch(showLoading());
-            const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/user/login', values);
-            dispatch(hideLoading());
-            if(response.data.success) {
-              toast.success(response.data.message);
-              localStorage.setItem('token', response.data.data);
-              navigate('/');
-            } else {
-              dispatch(hideLoading())
-              toast.error(response.data.message)
-            }
+      try {
+        dispatch(showLoading());
+        const formattedValues = {
+            ...values,
+            email: values.email.toLowerCase()
+        };
+        const response = await axios.post('https://gimnasio-fiori-production.up.railway.app/api/user/login', formattedValues);
+        dispatch(hideLoading());
+        if (response.data.success) {
+            localStorage.setItem('token', response.data.data);
+            toast.success(response.data.message);
+            navigate('/');
+        } else {
+            toast.error(response.data.message);
+        }
           } catch (error) {
             console.log(error);
               toast.error('something went wrong');  

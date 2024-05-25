@@ -84,6 +84,10 @@ function BookAppointment() {
               <Select 
                 className="select-clase"
                 placeholder="Seleccione una clase"
+<<<<<<< HEAD
+=======
+                className='mt-3 p-3 clase'
+>>>>>>> 1d5a353474bf4d88706dfd3b49cf63d0f7c6e7f0
                 onChange={(value) => setSelectedClass(value)}
               >
                 {employee.classes.map((cls) => (
