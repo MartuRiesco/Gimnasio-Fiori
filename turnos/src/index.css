@@ -72,11 +72,7 @@ label {
 .spinner-border {
   width: 2rem;
   height: 2rem;
-<<<<<<< HEAD
   color: var(--clr-white);
-=======
-  color: var(--clr-secundario-dark);
->>>>>>> 1d5a353474bf4d88706dfd3b49cf63d0f7c6e7f0
 }
 
 /* Commom Styling */
