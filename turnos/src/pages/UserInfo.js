@@ -58,7 +58,7 @@ function UserInfo() {
         dispatch(hideLoading());
         console.error('Error al actualizar usuario:', error);
       }
-    };
+    }
   
     return (
       <div>

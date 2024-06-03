@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { hideLoading, showLoading } from '../../redux/alertsSlice';
 import axios from 'axios';
-import '../style.css'
 import moment from 'moment';
 import { Radio } from 'antd';
 
@@ -58,7 +57,6 @@ function UsersList() {
 
   return (
     <div className='service'>
-<<<<<<< HEAD
       <div className='title-container'>
         <h1 className='title-notifications'>Lista de usuarios</h1>
         <i className="ri-user-follow-line"></i>
@@ -82,32 +80,6 @@ function UsersList() {
                 <i className="ri-whatsapp-line"></i>
                 {user.phone}
               </Link>
-=======
-        <div className='title-container'>
-          <h1 className='title-notifications'>Lista de clientes</h1>
-          <i class="ri-user-follow-line"></i>
-        </div>
-        <div className='service-container'>
-            {users.map((user) => (
-                                <div className='employee-card'>
-                                      
-                                    <h2>{user.name}</h2>
-                                    <div className='employee-container'>
-                                    <Link 
-                                      className='employee-whatsapp' 
-                                      to={`https://api.whatsapp.com/send?phone=549${user.phone}`}>
-                                            <i class="ri-whatsapp-line"></i> 
-                                            {user.phone}
-                                    </Link>
-                                    </div>
-                                    <p>{user.email}</p>
-                                    <p>{moment(user.createdAt).format('DD-MM-YYYY')}</p>
-                                    <div>
-                                        <h1 className='employee-rejected' onClick={() => deleteUser(user._id)} >Borrar Usuario</h1>
-                                    </div>
-                                </div>
-                            ))}
->>>>>>> efad2192c9e7b2fe81a3680fa01895538ff8904b
             </div>
             {user.isEmployee ? (
               <p>Empleado</p>
