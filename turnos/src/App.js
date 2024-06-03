@@ -48,9 +48,9 @@ function App() {
                       <Login /> 
                   </PublicRoute>}/>
               <Route path='/register' element={ 
-                  <PublicRoute>
+                  <ProtectedRoute>
                       <Register /> 
-                  </PublicRoute>
+                  </ProtectedRoute>
                 }/>
               <Route path='/' element={ 
                   <ProtectedRoute>
