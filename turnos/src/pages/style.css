@@ -27,6 +27,7 @@
 font-weight: bold;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -37,6 +38,39 @@ height: 30px;
 display: flex;
 align-items: start;
 }
+=======
+/* .select-clase {
+    margin: 20px 0 15px !important;
+    height: 50px !important;
+    min-width: 300px !important;
+    border: 2px var(--clr-primario) solid;
+    border-radius: 15px !important;
+    list-style: none !important;
+    text-decoration: none !important;
+}  */
+
+.ant-select-selector {
+    padding: 20px !important;
+    height: 40px !important;
+    border: 1px solid var(--clr-primario) !important;
+}
+
+.ant-select-selection-placeholder {
+    padding: 5px !important;
+    min-height: 40px !important;
+    border: none !important;
+}
+
+.select-clase > placeholder {
+    padding: 10px !important;
+} 
+
+.select-clase-input {
+    margin: 8px 5px 0 !important;
+    padding: 10px !important;
+}
+
+>>>>>>> efad2192c9e7b2fe81a3680fa01895538ff8904b
 .page-title {
     margin: 20px !important;
     font-weight: bold;
@@ -382,6 +416,10 @@ align-items: start;
     padding: 10px !important;
 }
 
+button > .button-class {
+    background-color: aquamarine !important;
+}
+
 .employee-whatsapp {
     margin: 1rem 0 !important;
     text-align: center;
@@ -389,7 +427,7 @@ align-items: start;
     background-color: var(--clr-secundario-dark) !important;
     color: var(--clr-secundario) !important;
     border-radius: 10px !important;
-    max-width: 120px !important;
+    max-width: 150px !important;
     padding: 10px !important;
 }
 
@@ -508,27 +546,32 @@ align-items: start;
     padding: 20px !important;
 }
 
+
 .ant-btn {
     font-size: 18px !important;
+    border: 1px solid var(--clr-secundario-dark) !important;
+    height: 60px !important;
+    padding: .5rem .8rem !important;
     color: var(--clr-secundario-dark) !important;
     background-color: var(--clr-secundario) !important;
 }
 
 .filter-container{
-    margin: 25px !important;
+    margin: 25px 0 !important;
+    padding: 0 30px !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.input-filter{
-    margin: 5px !important;
+.input-filter {
+    margin: 5px 20px !important;
 }
 
-.filter-label{
+.filter-label {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: left;
 }
 .clase{
     height: 70px;

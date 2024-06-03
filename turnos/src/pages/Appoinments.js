@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { hideLoading, showLoading } from '../redux/alertsSlice';
 import axios from 'axios';
-import moment from 'moment';
+//import moment from 'moment';
 import { Link } from 'react-router-dom';
 
 function Appointments() {
@@ -95,7 +95,7 @@ function Appointments() {
       {user.isAdmin && (
         <div className="filter-container">
           <label className='filter-label'>
-            Clase:
+            Clase:    
             <input
               type="text"
               name="className"
@@ -145,6 +145,7 @@ function Appointments() {
                 <p className="employee-status">{appointment.status}</p>
                 {user.isAdmin && <p>Cliente: {appointment.userInfo?.name}</p>}
                 <p>Clase: {classInfo ? classInfo.name : 'Clase no encontrada'}</p>
+                {!user.isAdmin && <p>Profesor: {appointment.employeeInfo?.name}</p>}
                 <p>Día: {classInfo ? classInfo.day : 'Día no encontrado'}</p>
                 <p>
                   Horario:{' '}

@@ -80,15 +80,19 @@ function BookAppointment() {
       <div className='calendar'>
         {employee && (
           <div className='mb-2'>
-            <div className='d-flex flex-column mt-2'>
+            <div className='select-clase-container d-flex flex-column mt-2'>
               <Select 
+                className="select-clase"
                 placeholder="Seleccione una clase"
-                className='mt-3 p-3 clase'
+                /* className='mt-3 p-3 clase' */
                 onChange={(value) => setSelectedClass(value)}
               >
                 {employee.classes.map((cls) => (
-                  <Option key={cls._id} value={cls._id}>
-                    {cls.name} - {cls.day} ({cls.timings.join(', ')})
+                  <Option
+                     className="select-clase-input"
+                     key={cls._id} 
+                     value={cls._id}>
+                    {cls.name} - {cls.day} ({cls.timings.join(' a ')})
                   </Option>
                 ))}
               </Select>
