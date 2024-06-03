@@ -27,52 +27,34 @@ const clearCacheAndStorage = () => {
 
     // Redirigir al usuario a la página de login
     navigate('/login');
+    window.location.reload();
 };
-  const userMenu = [
-    {
-        name: 'Clases Disponibles',
-        path: '/home',
-        icon: 'ri-arrow-right-line'
-    },
-    {
-        name: 'Mis Clases',
-        path: '/appointments',
-        icon: 'ri-calendar-check-line'
-    },
-    {
-        name: 'Mi Perfil',
-        path: '/get-user-info-by-id',
-        icon: 'ri-user-line'
-    },
-    {
-        name: 'Cuenta Empleado',
-        path:'/apply-employee-account',
-        icon:'ri-user-add-line'
-    }
-  ];
+
   const adminMenu = [
+    {
+        name: 'Carga de Usuarios',
+        path: '/register',
+        icon: 'ri-user-add-line'
+    },
     {
         name: 'Lista de Usuarios',
         path: '/admin/users',
         icon: 'ri-user-line'
     },
     {
-        name: 'Clases',
-        path: '/admin/appointments',
-        icon: 'ri-calendar-check-line'
+        name: 'Cierre mensual',
+        path: '/admin/cierre',
+        icon: 'ri-refund-2-line' 
+        
     },
-    {
-        name: 'Empleados',
-        path: '/admin/employees',
-        icon: 'ri-user-add-line'
-    }
+    
   ];
 
   const employeeMenu = [
 
     {
-        name: 'Usuarios en Clases',
-        path: '/employee/appointments',
+        name: 'Lista de usuarios',
+        path: '/admin/users',
         icon: 'ri-user-add-line'
     },
     {
@@ -84,7 +66,7 @@ const clearCacheAndStorage = () => {
   ];
 
   const welcome = 'Bienvenido a nuestro centro de administración ';
-  const menuToBeRendered = user?.isAdmin ? adminMenu : user?.isEmployee ? employeeMenu : userMenu;
+  const menuToBeRendered = user?.isAdmin ? adminMenu : employeeMenu ;
   const role = user?.isAdmin ? 'Admin' : user?.isEmployee ? 'Profesional' : 'Cliente';
 
   return (

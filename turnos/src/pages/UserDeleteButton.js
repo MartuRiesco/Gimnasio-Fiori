@@ -6,7 +6,7 @@ const UserDeleteButton = ({ userId }) => {
   const deleteUser = async () => {
     try {
       const response = await axios.delete(`https://gimnasio-fiori-production.up.railway.app/api/admin/${userId}`); // Envía una solicitud DELETE al backend
-      alert(response.data.message); // Muestra el mensaje de éxito o error
+      alert(response.data.message); 
     } catch (error) {
       console.error('Error al eliminar el usuario:', error);
       alert('Error al eliminar el usuario');

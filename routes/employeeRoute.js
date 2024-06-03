@@ -2,8 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/userModel");
 const Employee = require("../models/employeeModel");
-const authenticationMiddleware = require('../middlewares/authenticationMiddleware');
-const Appointment = require("../models/appointmentModel");
+const authenticationMiddleware = require('../middlewares/authenticationMiddleware'); 
 const moment = require('moment');
 
 

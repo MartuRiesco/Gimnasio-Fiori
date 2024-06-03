@@ -25,6 +25,21 @@ const userSchema = new mongoose.Schema(
         type: Boolean,
         default: false
     },
+    observaciones: {
+        type: String,
+    },
+    mesInscripcion: {
+        type: String,
+    },
+    pago: {
+        type:Boolean
+    },
+    fechaPago: {
+        type: Date,
+    },
+    monto: {
+        type: Number,
+    },
     seenNotifications: {
         type: Array,
         default: []

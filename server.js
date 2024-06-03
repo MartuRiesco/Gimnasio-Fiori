@@ -11,13 +11,13 @@ app.use((error, req, res, next) => {
     const message = `😨 Ah ocurrido un error desconocido: ${error.message}`;
     res.status(500).json({ status: 'error', message });
   });
- app.use((req, res, next) => {
+ /* app.use((req, res, next) => {
     // Configura los encabezados CORS para permitir todas las solicitudes de cualquier origen
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
-}); 
+});  */
 
 app.use('/api/user', userRoute);
 app.use('/api/admin', adminRoute);
