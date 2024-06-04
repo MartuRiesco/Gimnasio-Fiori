@@ -54,9 +54,9 @@ function Register() {
     return (
         <div className="authentication">
             <div className="authentication-form p-3">
-                <div>
+                {/* <div>
                     <Logo />
-                </div>
+                </div> */}
                 <Form layout='vertical m-3' onFinish={onFinish}>
                     <Form.Item name='name' label="Nombre" rules={[{ required: true }]}>
                         <Input placeholder='Nombre' />
