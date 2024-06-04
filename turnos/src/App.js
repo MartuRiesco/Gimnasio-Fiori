@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import Login from './pages/Login'
 import { useSelector } from 'react-redux';
+import Refound from './pages/Refound';
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
 import ApplyEmployee from './pages/ApplyEmployee';
@@ -47,9 +48,9 @@ function App() {
                       <Login /> 
                   </PublicRoute>}/>
               <Route path='/register' element={ 
-                  <PublicRoute>
+                  <ProtectedRoute>
                       <Register /> 
-                  </PublicRoute>
+                  </ProtectedRoute>
                 }/>
               <Route path='/' element={ 
                   <ProtectedRoute>
@@ -83,7 +84,7 @@ function App() {
                       <AppointmentBooked /> 
                   </ProtectedRoute>
                 }/>
-                 <Route path='/get-user-info-by-id' element={ 
+                 <Route path='/get-user-info-by-id/:userId' element={ 
                   <ProtectedRoute>
                     <Header />
                     <UserInfo />
@@ -136,6 +137,12 @@ function App() {
                   <ProtectedRoute>
                     <Header />
                       <Appoinments /> 
+                  </ProtectedRoute>
+                }/>
+                <Route path='/admin/cierre' element={ 
+                  <ProtectedRoute>
+                    <Header />
+                      <Refound/> 
                   </ProtectedRoute>
                 }/>
           </Routes>

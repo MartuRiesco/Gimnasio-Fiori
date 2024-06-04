@@ -50,11 +50,7 @@ function Login() {
                             Ingresar
                         </Button>
 
-                        <Link to="/register" className="anchor mt-4">
-                        <Button className="primary-button mt-2 mb-4" htmlType="submit">
-                            Registrarse
-                        </Button>
-                        </Link>
+                       
                 </Form>
             </div>
         </div>
