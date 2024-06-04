@@ -290,7 +290,7 @@
     background-color: var(--clr-secundario) !important;
     margin: 1rem 0 !important;
     width: 350px !important;
-    height: 280px !important;
+    max-height: 350px !important;
     padding: 2rem !important;
     border-radius: 30px !important;
     color: white;
