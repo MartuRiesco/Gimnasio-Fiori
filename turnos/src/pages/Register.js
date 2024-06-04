@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { hideLoading, showLoading } from '../redux/alertsSlice';
 import Logo from '../components/Logo';
-import EmployeeForm from '../components/EmployeeForm';
+//import EmployeeForm from '../components/EmployeeForm';
 
 function Register() {
     const dispatch = useDispatch();
@@ -106,9 +106,9 @@ function Register() {
                             ) : ''}
                         </div>
                     }
-                    {/* <Form.Item name='password' label="Password" rules={[{ required: true }]}>
+                    <Form.Item name='password' label="Password" rules={[{ required: true }]}>
                         <Input placeholder='Password' type="password" />
-                    </Form.Item> */}
+                    </Form.Item>
                     <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrar Cliente</Button>
                     <Link to="/login" className="anchor mt-4">
                         <i className="ri-arrow-left-line"></i>
