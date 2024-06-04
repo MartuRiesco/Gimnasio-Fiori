@@ -39,12 +39,16 @@ const navigate = useNavigate()
   const totalUsuariosNoPagados = users.length - totalUsuariosPagados;
 
   return (
-    <div className=''>
-          <h1 className='title-refound'>Resumen de Pagos</h1>
-          <div className='booked-notification'>
-              <p className='info-refound'><span className='title-refound-info'>Total Pagos:</span>${totalMontoPagado}</p>
+    <div className='service-container'>
+          <div className='title-container'>
+              <h1 className='title-notifications'>Resumen de pagos</h1>
+              <i className="ri-line-chart-line"></i>
+          </div>
+          <div className='employee-card'>
+              
               <p className='info-refound'> <span className='title-refound-info'>Total usuarios impagos:</span>{totalUsuariosPagados}</p>
               <p className='info-refound'> <span className='title-refound-info'>Total usuarios pagos:</span> {totalUsuariosNoPagados}</p>
+              <p className='info-refound'><span className='title-refound-info'>Total Pagos:</span>${totalMontoPagado}</p>
           <h1 className='button-booked' onClick={goBack}>
                   Volver
           </h1>

@@ -76,24 +76,29 @@ function Register() {
                             <Form.Item name='observaciones' label="Observaciones">
                                 <Input placeholder='Observaciones' />
                             </Form.Item>
-                            <Form.Item name='mesInscripcion' label="Mes de inscripción" rules={[{ required: true }]}>
-                                <Select placeholder='Mes de Inscripción'>
-                                    {months.map(month => (
-                                        <Select.Option key={month} value={month}>
-                                            {month}
-                                        </Select.Option>
-                                    ))}
-                                </Select>
-                            </Form.Item>
-                            <Form.Item label="Pago">
-                                <Input type='checkbox' className='checkbox' checked={pago} onChange={() => {
-                                    setPago(!pago);
-                                    if (!pago) {
-                                        setFechaPago(null);
-                                        setMonto(null);
-                                    }
-                                }} />
-                            </Form.Item>
+                            <div className='mb-2'>
+                                <Form.Item name='mesInscripcion' label="Mes de inscripción" rules={[{ required: true }]}>
+                                    <Select placeholder='Mes de Inscripción'>
+                                        {months.map(month => (
+                                            <Select.Option key={month} value={month}>
+                                                {month}
+                                            </Select.Option>
+                                        ))}
+                                    </Select>
+                                </Form.Item>
+                            </div>
+                            <div className='d-flex'>
+                                <Form.Item label="Pago">
+                                    <Input type='checkbox' className='checkbox' checked={pago} onChange={() => {
+                                        setPago(!pago);
+                                        if (!pago) {
+                                            setFechaPago(null);
+                                            setMonto(null);
+                                        }
+                                    }} />
+                                </Form.Item>
+                            </div>
+                            
                             {pago ? (
                                 <div>
                                     <Form.Item name='fechaPago' label="Fecha de Pago">

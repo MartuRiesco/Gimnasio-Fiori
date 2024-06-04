@@ -143,3 +143,8 @@ label {
 .authentication-form {
   width: 400px;
 }
+
+.ant-form-item-control-input-content {
+  max-width: 400px !important;
+  border: none !important;
+}
