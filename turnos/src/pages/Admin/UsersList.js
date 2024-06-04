@@ -62,10 +62,10 @@ function UsersList() {
         <i className="ri-user-follow-line"></i>
       </div>
       <div className='filter-container'>
-        <Radio.Group onChange={(e) => setFilter(e.target.value)} value={filter}>
-          <Radio value='all'>Todos</Radio>
-          <Radio value='pago'>Pagados</Radio>
-          <Radio value='noPago'>No Pagados</Radio>
+        <Radio.Group  onChange={(e) => setFilter(e.target.value)} value={filter}>
+          <Radio className='employee-change ' value='all'><p className='m-2'>Todos</p></Radio>
+          <Radio className='employee-approved ' value='pago'><p className='m-2'>Pago</p></Radio>
+          <Radio className='employee-rejected ' value='noPago'><p className='m-2'>Impago</p></Radio>
         </Radio.Group>
       </div>
       <div className='service-container'>

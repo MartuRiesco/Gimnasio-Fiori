@@ -112,7 +112,7 @@ function Register() {
                     <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrarse</Button>
                     <Link to="/login" className="anchor mt-4">
                         <i className="ri-arrow-left-line"></i>
-                        Volver al login
+                        Volver al Inicio
                     </Link>
                 </Form>
             </div>

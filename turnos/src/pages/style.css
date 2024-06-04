@@ -27,18 +27,12 @@
 font-weight: bold;
 }
 
-<<<<<<< HEAD
-
-
-
-
 .checkbox{
 width: 30px !important;
 height: 30px;
 display: flex;
 align-items: start;
 }
-=======
 /* .select-clase {
     margin: 20px 0 15px !important;
     height: 50px !important;
@@ -70,7 +64,6 @@ align-items: start;
     padding: 10px !important;
 }
 
->>>>>>> efad2192c9e7b2fe81a3680fa01895538ff8904b
 .page-title {
     margin: 20px !important;
     font-weight: bold;
@@ -325,7 +318,7 @@ align-items: start;
     background-color: var(--clr-secundario) !important;
     margin: 1rem 0 !important;
     width: 350px !important;
-    height: 280px !important;
+    max-height: 380px !important;
     padding: 2rem !important;
     border-radius: 30px !important;
     color: white;
@@ -365,7 +358,7 @@ align-items: start;
     margin-right: 1rem !important;
     margin-top: .5rem !important;
     font-size: 12px !important;
-    background-color: green !important;
+    background-color: var(--clr-gray) !important;
     color: var(--clr-secundario) !important;
     border-radius: 10px !important;
     width: 85px !important;
@@ -561,6 +554,7 @@ button > .button-class {
     padding: 0 30px !important;
     display: flex;
     flex-direction: column;
+    gap: 20px !important;
     align-items: flex-start;
 }
 
