@@ -40,19 +40,15 @@ const navigate = useNavigate()
 
   return (
     <div className=''>
-        <section className='green-dot-container booked'>
-                        {/* <div className='green-dot'></div> */}
-                    </section>
-      <h1 className='title-refound'>Resumen de Pagos</h1>
-      <div className='booked-notification'>
-      <p className='info-refound'><span className='title-refound-info'>Total Pagos: </span>${totalMontoPagado}</p>
-      <p className='info-refound'> <span className='title-refound-info'>Total usuarios impagos: </span>{totalUsuariosPagados}</p>
-      <p className='info-refound'> <span className='title-refound-info'>Total usuarios pagos:</span> {totalUsuariosNoPagados}</p>
-      <h1 className='button-booked' onClick={goBack}>
-                                Volver
-                            </h1>
+          <h1 className='title-refound'>Resumen de Pagos</h1>
+          <div className='booked-notification'>
+              <p className='info-refound'><span className='title-refound-info'>Total Pagos:</span>${totalMontoPagado}</p>
+              <p className='info-refound'> <span className='title-refound-info'>Total usuarios impagos:</span>{totalUsuariosPagados}</p>
+              <p className='info-refound'> <span className='title-refound-info'>Total usuarios pagos:</span> {totalUsuariosNoPagados}</p>
+          <h1 className='button-booked' onClick={goBack}>
+                  Volver
+          </h1>
       </div>
-     
     </div>
   );
 }

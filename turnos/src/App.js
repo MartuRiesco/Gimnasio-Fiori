@@ -49,6 +49,7 @@ function App() {
                   </PublicRoute>}/>
               <Route path='/register' element={ 
                   <ProtectedRoute>
+                      <Header />
                       <Register /> 
                   </ProtectedRoute>
                 }/>

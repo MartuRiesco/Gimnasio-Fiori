@@ -106,10 +106,10 @@ function Register() {
                             ) : ''}
                         </div>
                     }
-                    <Form.Item name='password' label="Password" rules={[{ required: true }]}>
+                    {/* <Form.Item name='password' label="Password" rules={[{ required: true }]}>
                         <Input placeholder='Password' type="password" />
-                    </Form.Item>
-                    <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrarse</Button>
+                    </Form.Item> */}
+                    <Button className="primary-button mt-2 mb-4" htmlType="submit">Registrar Cliente</Button>
                     <Link to="/login" className="anchor mt-4">
                         <i className="ri-arrow-left-line"></i>
                         Volver al Inicio
