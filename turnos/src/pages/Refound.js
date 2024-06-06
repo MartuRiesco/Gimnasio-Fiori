@@ -46,8 +46,8 @@ const navigate = useNavigate()
           </div>
           <div className='employee-card'>
               
-              <p className='info-refound'> <span className='title-refound-info'>Total usuarios impagos:</span>{totalUsuariosPagados}</p>
-              <p className='info-refound'> <span className='title-refound-info'>Total usuarios pagos:</span> {totalUsuariosNoPagados}</p>
+              <p className='info-refound'> <span className='title-refound-info'>Total usuarios pagos:</span>{totalUsuariosPagados}</p>
+              <p className='info-refound'> <span className='title-refound-info'>Total usuarios impagos:</span> {totalUsuariosNoPagados}</p>
               <p className='info-refound'><span className='title-refound-info'>Total Pagos:</span>${totalMontoPagado}</p>
           <h1 className='button-booked' onClick={goBack}>
                   Volver
